@@ -105,7 +105,9 @@ legend{
 	font-weight: bold;
 	margin-bottom: .5em;
 }
-
+fieldset {
+    margin-top: 1em;
+}
 label{
 	font-size: 90%;
 	float: left;
@@ -113,10 +115,14 @@ label{
 	width: 13em;
 }
 input, select {
-    width: 11em;
+    width: 12em;
     margin-left: .5em;
     margin-bottom: .5em;
 }
+#buttons input {
+	width: 10em;
+}
+
 input:required, input[required] {
     border: 2px solid orange;
 }
@@ -126,9 +132,7 @@ input:valid {
 input:invalid {
     box-shadow: none;
 }
-#billme, creditcard label{
-	text-align: center;
-}
+
 main h1 { 
 	margin: 0;
 	font-size: 200%;
