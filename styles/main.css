@@ -99,6 +99,36 @@ main {
 	border-left: 2px solid #e8b417;
 }
 
+legend{
+	color:#8E8C8C;
+	font-size: 85%;
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+
+label{
+	font-size: 90%;
+	float: left;
+	text-align: right;
+	width: 13em;
+}
+input, select {
+    width: 11em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input:required, input[required] {
+    border: 2px solid orange;
+}
+input:valid {
+    border: 1px solid black;
+}
+input:invalid {
+    box-shadow: none;
+}
+#billme, creditcard label{
+	text-align: center;
+}
 main h1 { 
 	margin: 0;
 	font-size: 200%;

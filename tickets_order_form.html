@@ -37,12 +37,13 @@
 			
 			<main>
 				<h1>Order Event Tickets</h1>
-				<!-- The form starts here... -->
+				<!-- The form starts here with the placer order selected and method post!... -->
 				<form name="order_form" action="place_order.html" method="post">
 					<fieldset>
 						<!-- The form and all labels. You can select that by attibutte -->
 						<legend>Member Information</legend>
 						<label for="email">E-Mail:</label>
+						<input type="email" name="email" id="email" autofocus><br>
 						<label for="first_name">First Name:</label>
 						<input type="text" name="first_name" id="first_name" required=""><br>
 						<label for="last_name">Last Name:</label>
@@ -54,7 +55,7 @@
 						<label for="province">Province:</label>
 						<input type="text" name="province" id="province" maxlength="2" placeholder="2-character code" required=""><br>
 						<label for="postal_code">Postal Code:</label>
-						<input type="text" name="postal_code" id="postal_code" required="" pattern="[A-Za-z0-9]{6}" title="Must be 6 alphanumeric characters long" placeholder="Must be 6 characters long"><br>
+						<input type="text" name="postal_code" id="postal_code" required="" pattern="[A-Za-z0-9]{6}" title="Must be 6 alphanumeric characters long" maxlength="6" placeholder="Must be 6 characters long"><br>
 						<label for="phone">Phone Number:</label>
 						<input type="tel" name="phone" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be in the 999-999-9999 format" placeholder="999-999-9999"><br>
 					</fieldset>	
@@ -74,11 +75,16 @@
 							<option value="DP">Donor Package</option>
 							<option value="ST">Single Tickets</option>
 						</select><br>
+							<label for="Num_Ticket">Number of Tickets:</label>
+                         	<input type="Num_Ticket" id="Num_Ticket" name="Num_Ticket" placeholder="Number of single tickets"><br>
+						
 						</fieldset>
 						<fieldset>
 						<legend>Payment Method</legend>
 						<input type="radio" id="billme" name="payment" value="billme">Bill Me
+						<label for= "billme"></label>
 						<input type="radio" id="creditcard" name="payment" value="creditcard">Credit Card
+						<label for= "creditcard"></label>
 						</fieldset>
 						<fieldset>
 						<legend>Credit Card Information</legend>							
@@ -92,7 +98,7 @@
 									  </select><br>
 							  
 									<label for="Card Number">Card Number:</label>
-									<input type="Card Number" id="Card Number" name="Card Number" placeholder="16 digits"><br>
+									<input type="Card Number" id="Card Number" required="" name="Card Number" placeholder="16 digits"><br>
 							
 							  
 			
