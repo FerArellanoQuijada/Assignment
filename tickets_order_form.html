@@ -38,11 +38,109 @@
 			<main>
 				<h1>Order Event Tickets</h1>
 				<!-- The form starts here... -->
-				
+				<form name="order_form" action="place_order.html" method="post">
+					<fieldset>
+						<!-- The form and all labels. You can select that by attibutte -->
+						<legend>Member Information</legend>
+						<label for="email">E-Mail:</label>
+						<label for="first_name">First Name:</label>
+						<input type="text" name="first_name" id="first_name" required=""><br>
+						<label for="last_name">Last Name:</label>
+						<input type="text" name="last_name" id="last_name" required=""><br>
+						<label for="address">Address:</label>
+						<input type="text" name="address" id="address"><br>
+						<label for="city">City:</label>
+						<input type="text" name="city" id="city" required=""><br>
+						<label for="province">Province:</label>
+						<input type="text" name="province" id="province" maxlength="2" placeholder="2-character code" required=""><br>
+						<label for="postal_code">Postal Code:</label>
+						<input type="text" name="postal_code" id="postal_code" required="" pattern="[A-Za-z0-9]{6}" title="Must be 6 alphanumeric characters long" placeholder="Must be 6 characters long"><br>
+						<label for="phone">Phone Number:</label>
+						<input type="tel" name="phone" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be in the 999-999-9999 format" placeholder="999-999-9999"><br>
+					</fieldset>	
+						<fieldset>
+							<legend>Ordering Information</legend>
+							<!-- The drop-down list with an all labels to select any option -->
+							<label for="event">Event:</label>
+							<select name="event" id="event">
+							<option value="CDC">Cookie Decoration Contest</option>
+							<option value="TDC">Tree Decoration Contest</option>
+							<option value="GOLRA">Gift of Light Ride-Along</option>
+							<option value="BWS">Breakfast With Santa</option>
+							</select><br>
+							<label for="event">Event:</label>
+							<select name="event" id="event">
+							<option value="MP">Member Package</option>
+							<option value="DP">Donor Package</option>
+							<option value="ST">Single Tickets</option>
+						</select><br>
+						</fieldset>
+						<fieldset>
+						<legend>Payment Method</legend>
+						<input type="radio" id="billme" name="payment" value="billme">Bill Me
+						<input type="radio" id="creditcard" name="payment" value="creditcard">Credit Card
+						</fieldset>
+						<fieldset>
+						<legend>Credit Card Information</legend>							
+							<!-- The drop-down list with an all labels. You can select that by attibutte -->
+							<label for="Card Type">Card Type:</label>
+							<select id="Card Type" name="Card Type">
+							  <option value="Visa" selected>Visa</option>
+							  <option value="Master Card" >Master Card</option>
+							  <option value="Discover">Discover</option>
+								  
+									  </select><br>
+							  
+									<label for="Card Number">Card Number:</label>
+									<input type="Card Number" id="Card Number" name="Card Number" placeholder="16 digits"><br>
+							
+							  
+			
+									 <label for="Expiration Data">Expiration Data:</label>
+									 <select id="Expiration Data" name="Expiration Data">
+							  <option value="January" selected>January</option>
+							  <option value="February" >February</option>
+							  <option value="March">March</option>
+									  <option value="April">April</option>
+									  <option value="May">May</option>
+									  <option value="June">June</option>
+									  <option value="July">July</option>
+									  <option value="August">August</option>
+									  <option value="September">September</option>
+									  <option value="October">October</option>
+									  <option value="November">November</option>
+									  <option value="December">December</option>
+									  </select>
+			
+									 
+									   <select id="Expiration year" name="Expiration year">
+							   <option value="2021" selected>2021</option>
+							   <option value="2020" >2022</option>
+							   <option value="2019">2023</option>
+									   <option value="2019">2024</option>
+									   <option value="2019">2025</option>
+									   <option value="2019">2026</option>
+									   <option value="2019">2027</option>
+									  
+			
+									 
+									  </select><br>
+									
+						</fieldset>
+						<fieldset id="buttons">
+							<legend>Submit Your Order</legend>
+							<!-- Submit and Reset Fields are located here. -->
+							<label>&nbsp;</label>
+							<input type="submit" id="submit" value="Submit">
+							<input type="reset" id="reset" value="Reset Fields">
+						</fieldset>
+					</fieldset>
+				</form>
 			</main>
 			
 			<footer>
-				<p>&copy; 2021 New Year Central. Created by Johnny White.</p>
+				<!-- Footes changed with my name and year -->
+				<p>&copy; 2022 New Year Central. Created by Fernando Arellano.</p>
 			</footer>
 		</div>
 	</body>
