@@ -1,3 +1,4 @@
+/*Created by Fernando Arellano*/
 * {
 	margin: 0;
 	padding: 0;
@@ -98,7 +99,7 @@ main {
 	min-height: 600px;
 	border-left: 2px solid #e8b417;
 }
-
+/*Titles for fields*/
 legend{
 	color:#8E8C8C;
 	font-size: 85%;
@@ -116,8 +117,9 @@ label{
 	text-align: right;
 	width: 13em;
 }
+/*Space between input and select fields(styles too)*/
 input, select {
-    width: 12em;
+    width: 15em;
     margin-left: .5em;
     margin-bottom: .5em;
 }
@@ -139,6 +141,14 @@ input:valid {
 }
 input:invalid {
     box-shadow: none;
+}
+/*Style for input month */
+#expiration_Data {
+	width: 6em;
+}
+/*Style for Year (Credit card)*/
+#expiration_year{
+	width: 4em;
 }
 
 main h1 { 
