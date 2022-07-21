@@ -105,9 +105,11 @@ legend{
 	font-weight: bold;
 	margin-bottom: .5em;
 }
+/*Style for every fildset*/
 fieldset {
     margin-top: 1em;
 }
+/*Styles for labels and alignment */
 label{
 	font-size: 90%;
 	float: left;
@@ -119,13 +121,19 @@ input, select {
     margin-left: .5em;
     margin-bottom: .5em;
 }
+/*radio margins and width*/
+input[type="radio"] {
+    width: inherit;
+    margin-left: 50px;
+}
 #buttons input {
 	width: 10em;
 }
-
+/*Orange borders for requires inputs*/
 input:required, input[required] {
     border: 2px solid orange;
 }
+/*black style for valid inputs*/
 input:valid {
     border: 1px solid black;
 }
